@@ -129,7 +129,7 @@ export default function UnidadesSection() {
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-bravino-cream/40 bg-bravino-cream/15">
                 <MapPin className="h-4 w-4" />
               </span>
-              [Como chegar na Matriz]
+              Como chegar na Matriz
             </button>
           </motion.article>
         </div>
@@ -170,7 +170,7 @@ export default function UnidadesSection() {
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-bravino-cream/35 bg-bravino-cream/10">
                 <MapPin className="h-4 w-4" />
               </span>
-              [Como chegar na Alameda]
+              Como chegar na Alameda
             </button>
           </motion.article>
 

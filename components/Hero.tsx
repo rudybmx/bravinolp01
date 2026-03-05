@@ -55,7 +55,7 @@ export default function Hero() {
               type="button"
               className="mt-10 inline-flex bg-bravino-red px-8 py-4 font-sans text-sm font-medium uppercase tracking-[0.08em] text-bravino-cream transition-transform duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-black"
             >
-              [Descobrir Rótulos Exclusivos]
+              Descobrir Rótulos Exclusivos
             </button>
           </div>
         </div>

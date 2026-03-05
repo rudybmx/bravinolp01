@@ -69,7 +69,7 @@ export default function VinhosSection() {
           href="#"
           className="mt-12 inline-flex items-center gap-3 border-b border-bravino-red pb-1 font-sans text-sm uppercase tracking-[0.12em] text-bravino-red transition-opacity hover:opacity-80"
         >
-          <span>[Ver Carta Completa em PDF]</span>
+          <span>Ver Carta Completa em PDF</span>
           <ArrowDownToLine className="h-4 w-4 text-bravino-red" />
         </motion.a>
       </div>
