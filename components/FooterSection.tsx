@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { Clock3 } from 'lucide-react';
+import { Clock3, Instagram, ShoppingBag } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -69,17 +69,19 @@ export default function FooterSection() {
                 href="https://instagram.com/bravino"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans text-sm text-bravino-cream transition-colors hover:text-bravino-red"
+                className="inline-flex w-fit items-center gap-2 font-sans text-sm text-bravino-cream transition-colors hover:text-bravino-red"
               >
-                @bravino
+                <Instagram className="h-4 w-4" />
+                Instagram Bravino
               </Link>
               <Link
                 href="https://bravino.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-sans text-sm text-bravino-cream transition-colors hover:text-bravino-red"
+                className="inline-flex w-fit items-center gap-2 font-sans text-sm text-bravino-cream transition-colors hover:text-bravino-red"
               >
-                bravino.com.br
+                <ShoppingBag className="h-4 w-4" />
+                E-commerce Bravino
               </Link>
             </div>
           </section>
