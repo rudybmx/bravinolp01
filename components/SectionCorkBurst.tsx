@@ -26,6 +26,16 @@ function rand(min: number, max: number) {
   return Math.random() * (max - min) + min;
 }
 
+function leftX(index: number, isMobile: boolean) {
+  if (isMobile) return index === 0 ? -34 : 38;
+  return index === 0 ? -52 : 62;
+}
+
+function rightX(index: number, wrapperWidth: number, isMobile: boolean) {
+  if (isMobile) return index === 0 ? wrapperWidth - 58 : wrapperWidth - 132;
+  return index === 0 ? wrapperWidth - 78 : wrapperWidth - 170;
+}
+
 export default function SectionCorkBurst() {
   const layerRef = useRef<HTMLDivElement | null>(null);
   const [corks, setCorks] = useState<BurstCork[]>([]);
@@ -58,7 +68,7 @@ export default function SectionCorkBurst() {
         const wrapperRect = wrapper.getBoundingClientRect();
 
         entries.forEach((entry) => {
-          if (!entry.isIntersecting || entry.intersectionRatio < 0.2) return;
+          if (!entry.isIntersecting || entry.intersectionRatio < 0.1) return;
 
           const target = entry.target as HTMLElement;
           const currentTop = entry.boundingClientRect.top;
@@ -84,8 +94,9 @@ export default function SectionCorkBurst() {
           const leftDesktop = sectionNumber % 2 === 0 ? 1 : 2;
           const rightDesktop = 3 - leftDesktop;
 
-          const leftCount = isMobile ? 1 : leftDesktop;
-          const rightCount = isMobile ? 1 : rightDesktop;
+          // Sempre 3 rolhas por seção (alternando 1:2 e 2:1 em todas as telas).
+          const leftCount = leftDesktop;
+          const rightCount = rightDesktop;
 
           const spawned: BurstCork[] = [];
 
@@ -94,12 +105,12 @@ export default function SectionCorkBurst() {
             const zSpinDelta = Math.random() > 0.5 ? 360 : -360;
             spawned.push({
               id: `${now}-L-${i}-${Math.random().toString(36).slice(2, 7)}`,
-              x: rand(-64, 178),
-              y: sectionTop - rand(28, 76),
+              x: leftX(i, isMobile) + rand(-6, 6),
+              y: sectionTop - (34 + i * 66),
               endY,
               scale: rand(0.92, isMobile ? 1.12 : 1.26),
               duration,
-              delay: rand(0.55, 1.35),
+              delay: 0.03 + i * 0.14,
               rotateXFrom: rand(-14, 8),
               rotateXTo: rand(24, 56),
               rotateYFrom: rand(-12, 12),
@@ -116,12 +127,12 @@ export default function SectionCorkBurst() {
             const zSpinDelta = Math.random() > 0.5 ? 360 : -360;
             spawned.push({
               id: `${now}-R-${i}-${Math.random().toString(36).slice(2, 7)}`,
-              x: rand(wrapperRect.width - 178, wrapperRect.width + 64),
-              y: sectionTop - rand(28, 76),
+              x: rightX(i, wrapperRect.width, isMobile) + rand(-6, 6),
+              y: sectionTop - (42 + i * 68),
               endY,
               scale: rand(0.92, isMobile ? 1.12 : 1.26),
               duration,
-              delay: rand(0.55, 1.35),
+              delay: 0.06 + i * 0.14,
               rotateXFrom: rand(-14, 8),
               rotateXTo: rand(24, 56),
               rotateYFrom: rand(-12, 12),
@@ -137,7 +148,7 @@ export default function SectionCorkBurst() {
         });
       },
       {
-        threshold: [0.2],
+        threshold: [0.1],
         root: null,
       }
     );
@@ -197,7 +208,6 @@ export default function SectionCorkBurst() {
             loading="lazy"
             className="h-auto w-full select-none"
             style={{
-              imageRendering: 'high-quality',
               filter: 'contrast(1.14) brightness(1.05) saturate(1.04)',
             }}
           />
