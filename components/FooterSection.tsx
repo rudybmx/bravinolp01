@@ -38,7 +38,7 @@ export default function FooterSection() {
 
   return (
     <footer ref={containerRef} className="bg-bravino-black text-bravino-cream relative z-20">
-      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 py-20 lg:px-12 lg:py-28">
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-4 py-12 md:px-6 md:py-20 lg:px-12 lg:py-28">
         <div className="grid grid-cols-1 gap-14 sm:grid-cols-2 xl:grid-cols-4">
           <section className="footer-col space-y-6">
             <h3 className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-bravino-peach">Brand</h3>
@@ -71,7 +71,7 @@ export default function FooterSection() {
               href="https://wa.me/5543991231069"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex w-fit border border-bravino-peach/60 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-peach transition-all duration-300 hover:bg-bravino-red hover:border-bravino-red hover:text-bravino-cream hover:shadow-[0_0_15px_rgba(114,47,55,0.4)]"
+              className="mt-2 inline-flex w-fit border border-bravino-peach/60 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-peach transition-all duration-300 hover:bg-bravino-red hover:border-bravino-red hover:text-bravino-cream hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_15px_rgba(114,47,55,0.4)]"
             >
                WhatsApp Matriz
             </Link>
@@ -87,7 +87,7 @@ export default function FooterSection() {
               href="https://wa.me/5543999731534"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex w-fit border border-bravino-peach/60 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-peach transition-all duration-300 hover:bg-bravino-red hover:border-bravino-red hover:text-bravino-cream hover:shadow-[0_0_15px_rgba(114,47,55,0.4)]"
+              className="mt-2 inline-flex w-fit border border-bravino-peach/60 px-5 py-2.5 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-peach transition-all duration-300 hover:bg-bravino-red hover:border-bravino-red hover:text-bravino-cream hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_15px_rgba(114,47,55,0.4)]"
             >
                WhatsApp Santana
             </Link>
@@ -126,9 +126,13 @@ export default function FooterSection() {
            <p className="text-center md:text-left font-sans text-xs tracking-[0.08em] text-bravino-cream/60">
             © 2026 Bravino Wine Concept. Todos os direitos reservados.
           </p>
-          <p className="text-center md:text-right font-sans text-xs tracking-[0.08em] text-bravino-cream/60">
-            Design & Code for Premium Experience.
-          </p>
+          <div className="flex justify-center md:justify-end transition-all duration-300 hover:brightness-125">
+            <img 
+              src="https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/logo/op7/logo.svg" 
+              alt="OP7 Franchising"
+              className="h-28 w-auto object-contain"
+            />
+          </div>
         </div>
       </div>
     </footer>

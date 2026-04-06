@@ -74,7 +74,7 @@ export default function UnidadesSection() {
 
   return (
     <section ref={containerRef} className="bg-bravino-cream text-bravino-black">
-      <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-col gap-32 px-6 py-28 lg:px-12 lg:py-40">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-col gap-24 px-4 py-16 md:gap-32 md:px-6 md:py-28 lg:px-12 lg:py-40">
         
         {/* Ayrton Senna */}
         <div className="unidade-ayrton-wrapper grid grid-cols-1 gap-14 lg:grid-cols-12 lg:items-center">
@@ -119,7 +119,7 @@ export default function UnidadesSection() {
 
             <button
               type="button"
-              className="mt-6 inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
+              className="mt-6 inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bravino-cream/40 bg-bravino-cream/15">
                 <MapPin className="h-5 w-5" />
@@ -155,7 +155,7 @@ export default function UnidadesSection() {
 
             <button
               type="button"
-              className="mt-6 inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
+              className="mt-6 inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
             >
               <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-bravino-cream/40 bg-bravino-cream/15">
                 <MapPin className="h-5 w-5" />

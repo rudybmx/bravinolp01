@@ -68,7 +68,7 @@ export default function GourmetSection() {
   return (
     <section ref={containerRef} className="relative overflow-hidden bg-[#FCFAFA] text-bravino-black border-y border-bravino-peach/30 shadow-[inset_0_15px_30px_rgba(26,10,14,0.02)]">
       
-      <div className="relative z-10 mx-auto w-full max-w-[1500px] px-6 py-28 lg:px-12 lg:py-36">
+      <div className="relative z-10 mx-auto w-full max-w-[1500px] px-4 py-16 md:px-6 md:py-28 lg:px-12 lg:py-36">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center xl:gap-24">
           
           {/* Esquerda: Imagem */}
@@ -125,7 +125,7 @@ export default function GourmetSection() {
              <div className="gourmet-stagger mt-16 pt-6 border-t border-bravino-peach/30">
                <button
                   type="button"
-                  className="group inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-105 hover:bg-black hover:text-bravino-peach hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
+                  className="group inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-cream transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] hover:bg-black hover:text-bravino-peach hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
                 >
                   <span className="flex items-center gap-2">Detalhes da Unidade <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" /></span>
                 </button>

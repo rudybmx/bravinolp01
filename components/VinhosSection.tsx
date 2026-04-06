@@ -53,7 +53,7 @@ export default function VinhosSection() {
       {/* Decorative Blur */}
       <div className="pointer-events-none absolute -left-1/4 top-0 h-[600px] w-[600px] rounded-full bg-bravino-peach/20 blur-[120px]" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 py-28 lg:px-12 lg:py-36">
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-4 py-16 md:px-6 md:py-28 lg:px-12 lg:py-36">
         <div className="vinhos-wrapper grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-20 xl:gap-24 items-center">
           
           {/* Left Column: Text & CTA */}
@@ -74,7 +74,7 @@ export default function VinhosSection() {
 
             <a
               href="#"
-              className="mt-14 inline-flex items-center gap-4 bg-transparent border border-bravino-red/80 px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-bravino-red transition-all duration-300 hover:bg-bravino-red hover:text-bravino-cream hover:shadow-[0_0_20px_rgba(114,47,55,0.4)]"
+              className="mt-14 inline-flex items-center gap-4 bg-transparent border border-bravino-red/80 px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-bravino-red transition-all duration-300 hover:bg-bravino-red hover:text-bravino-cream hover:scale-[1.02] active:scale-[0.98] hover:shadow-[0_0_20px_rgba(114,47,55,0.4)]"
             >
               <span>Ver Carta Completa em PDF</span>
               <ArrowDownToLine className="h-5 w-5" />
@@ -86,7 +86,7 @@ export default function VinhosSection() {
             {wineTypes.map((wine, idx) => (
               <article
                 key={wine.name}
-                className="vinho-card group relative overflow-hidden rounded-[2rem] border border-bravino-peach/50 bg-white/60 p-10 shadow-[0_15px_35px_rgba(13,13,13,0.04)] backdrop-blur-md transition-[box-shadow,transform] duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(114,47,55,0.12)]"
+                className="vinho-card group relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/60 p-10 shadow-[0_15px_35px_rgba(13,13,13,0.04),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(114,47,55,0.12)]"
               >
                 <div className={`absolute -right-8 -top-8 h-40 w-40 rounded-full bg-gradient-to-br ${wine.tone} blur-2xl opacity-60 transition-[transform,opacity] duration-700 group-hover:scale-[1.8] group-hover:opacity-100`} />
                 <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full border-[1.5px] border-bravino-peach/30 bg-bravino-cream/20" />

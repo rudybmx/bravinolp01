@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
+import { Cormorant_Garamond, Outfit } from 'next/font/google';
 import SmoothScroll from '@/components/SmoothScroll';
 import './globals.css';
 
@@ -9,9 +9,8 @@ const cormorant = Cormorant_Garamond({
   variable: '--font-serif',
 });
 
-const dmSans = DM_Sans({
+const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '700'],
   variable: '--font-sans',
 });
 
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="pt-BR" className={`${cormorant.variable} ${dmSans.variable}`}>
+    <html lang="pt-BR" className={`${cormorant.variable} ${outfit.variable}`}>
       <body suppressHydrationWarning className="bg-bravino-black font-sans text-bravino-cream antialiased">
         <SmoothScroll>
           {children}

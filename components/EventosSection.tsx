@@ -131,7 +131,7 @@ export default function EventosSection() {
                 <div className="pointer-events-auto mt-6">
                   <button
                     type="button"
-                    className="group inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-105 hover:bg-white hover:text-bravino-red hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
+                    className="group inline-flex items-center gap-4 bg-bravino-red px-8 py-4 font-sans text-sm font-semibold uppercase tracking-[0.1em] text-white transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] hover:bg-white hover:text-bravino-red hover:shadow-[0_0_20px_rgba(114,47,55,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-bravino-peach focus-visible:ring-offset-2 focus-visible:ring-offset-bravino-cream"
                   >
                     <span className="flex items-center gap-3">
                       Quero Participar <Wine className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />

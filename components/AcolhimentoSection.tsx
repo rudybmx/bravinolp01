@@ -59,8 +59,8 @@ export default function AcolhimentoSection() {
 
   return (
     <section ref={containerRef} className="bg-bravino-cream text-bravino-black relative">
-      <div className="relative z-10 grid min-h-screen grid-cols-1 items-start lg:grid-cols-2">
-        <article className="acolhimento-article px-6 py-28 lg:px-16 lg:py-32 xl:px-24">
+      <div className="relative z-10 grid min-h-[100dvh] grid-cols-1 items-start lg:grid-cols-2">
+        <article className="acolhimento-article px-4 py-16 md:px-6 md:py-28 lg:px-16 lg:py-32 xl:px-24">
           <div className="acolhimento-text">
             <span className="mb-8 block h-[2px] w-28 bg-bravino-peach/80" aria-hidden="true" />
             
@@ -74,7 +74,7 @@ export default function AcolhimentoSection() {
           <div className="feature-container mt-16 flex flex-wrap items-center gap-8">
             {features.map(({ icon: Icon, label }) => (
               <div key={label} className="feature-item inline-flex items-center gap-4">
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-bravino-peach/60 bg-white shadow-[0_4px_15px_rgba(201,169,110,0.15)] transition-all duration-300 hover:scale-105 hover:bg-bravino-cream hover:shadow-[0_4px_25px_rgba(114,47,55,0.2)]">
+                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-bravino-peach/60 bg-white shadow-[0_4px_15px_rgba(201,169,110,0.15)] transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] hover:bg-bravino-cream hover:shadow-[0_4px_25px_rgba(114,47,55,0.2)]">
                   <Icon className="h-6 w-6 text-bravino-red" strokeWidth={1.5} />
                 </span>
                 <span className="font-sans text-sm font-semibold uppercase tracking-[0.1em] text-bravino-black/80">{label}</span>
@@ -83,7 +83,7 @@ export default function AcolhimentoSection() {
           </div>
         </article>
 
-        <aside className="acolhimento-aside relative h-full overflow-hidden px-6 py-20 lg:px-16 lg:py-24 xl:px-20 lg:border-l lg:border-bravino-peach/20">
+        <aside className="acolhimento-aside relative h-full overflow-hidden px-4 py-16 md:px-6 md:py-20 lg:px-16 lg:py-24 xl:px-20 lg:border-l lg:border-bravino-peach/20">
           <div className="pointer-events-none absolute -right-28 top-10 h-[30rem] w-[30rem] rounded-full bg-bravino-peach/15 blur-[80px]" aria-hidden="true" />
           <div className="pointer-events-none absolute right-24 top-64 h-56 w-56 rounded-full bg-bravino-peach/15 blur-[60px]" aria-hidden="true" />
 

@@ -55,7 +55,7 @@ export default function ConviteFinalSection() {
         </span>
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1200px] px-6 py-32 text-center lg:px-12 lg:py-40">
+      <div className="relative z-10 mx-auto w-full max-w-[1200px] px-4 py-20 md:px-6 md:py-32 lg:px-12 lg:py-40 text-center">
         <div className="convite-content mx-auto flex max-w-4xl flex-col items-center">
           <span className="mx-auto mb-14 block h-px w-full max-w-4xl bg-bravino-peach" aria-hidden="true" />
 
