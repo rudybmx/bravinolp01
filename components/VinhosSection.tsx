@@ -5,10 +5,10 @@ import { ArrowDownToLine } from 'lucide-react';
 import { gsap } from 'gsap';
 
 const wineTypes = [
-  { name: 'Brancos', note: 'Frescor vibrante', tone: 'from-bravino-cream to-bravino-peach/45' },
-  { name: 'Rosés', note: 'Aromas delicados', tone: 'from-bravino-cream to-bravino-peach/40' },
-  { name: 'Tintos', note: 'Estrutura e intensidade', tone: 'from-bravino-cream to-bravino-peach/55' },
-  { name: 'Espumantes', note: 'Elegância festiva', tone: 'from-bravino-cream to-bravino-peach/35' },
+  { name: 'Brancos', note: 'Frescor vibrante', tone: 'from-bravino-cream to-bravino-peach/45', url: 'https://www.bravino.com.br/vinhos/vinhos-brancos' },
+  { name: 'Rosés', note: 'Aromas delicados', tone: 'from-bravino-cream to-bravino-peach/40', url: 'https://www.bravino.com.br/vinhos/vinhos-roses' },
+  { name: 'Tintos', note: 'Estrutura e intensidade', tone: 'from-bravino-cream to-bravino-peach/55', url: 'https://www.bravino.com.br/vinhos/vinhos-tintos' },
+  { name: 'Espumantes', note: 'Elegância festiva', tone: 'from-bravino-cream to-bravino-peach/35', url: 'https://www.bravino.com.br/espumantes' },
 ];
 
 export default function VinhosSection() {
@@ -84,9 +84,12 @@ export default function VinhosSection() {
           {/* Right Column: Cards Grid */}
           <div className="lg:col-span-7 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {wineTypes.map((wine, idx) => (
-              <article
+              <a
+                href={wine.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={wine.name}
-                className="vinho-card group relative overflow-hidden rounded-[2rem] border border-white/20 bg-white/60 p-10 shadow-[0_15px_35px_rgba(13,13,13,0.04),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(114,47,55,0.12)]"
+                className="vinho-card group relative block overflow-hidden rounded-[2rem] border border-white/20 bg-white/60 p-10 shadow-[0_15px_35px_rgba(13,13,13,0.04),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-md transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_25px_50px_rgba(114,47,55,0.12)]"
               >
                 <div className={`absolute -right-8 -top-8 h-40 w-40 rounded-full bg-gradient-to-br ${wine.tone} blur-2xl opacity-60 transition-[transform,opacity] duration-700 group-hover:scale-[1.8] group-hover:opacity-100`} />
                 <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-full border-[1.5px] border-bravino-peach/30 bg-bravino-cream/20" />
@@ -100,7 +103,7 @@ export default function VinhosSection() {
                 <p className="relative z-10 mt-4 font-sans text-sm md:text-base text-bravino-black/80">{wine.note}</p>
 
                 <div className="relative z-10 mt-12 h-[2px] w-12 bg-bravino-peach/80 transition-all duration-500 group-hover:w-full group-hover:bg-bravino-red" />
-              </article>
+              </a>
             ))}
           </div>
 
