@@ -68,14 +68,14 @@ export default function GourmetSection() {
   return (
     <section ref={containerRef} className="relative overflow-hidden bg-[#FCFAFA] text-bravino-black border-y border-bravino-peach/30 shadow-[inset_0_15px_30px_rgba(26,10,14,0.02)]">
       
-      <div className="relative z-10 mx-auto w-full max-w-[1500px] px-4 py-16 md:px-6 md:py-28 lg:px-12 lg:py-36">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 py-20 md:px-6 md:py-24 lg:px-12 lg:py-32">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center xl:gap-24">
           
           {/* Esquerda: Imagem */}
           <div className="gourmet-image-wrapper relative aspect-[4/5] w-full overflow-hidden rounded-t-[100px] border-4 border-bravino-cream shadow-[0_30px_60px_rgba(114,47,55,0.08)] md:aspect-square lg:aspect-[3/4]">
              <div className="absolute inset-0 bg-gradient-to-t from-bravino-black/50 via-bravino-black/10 to-transparent z-10" />
 			       <Image
-               src="/bravino-gourmet.png"
+               src="/gourmet-nova.jpg"
                alt="Tábua de Frios e Vinho Gourmet Bravino"
                fill
                className="gourmet-image object-cover"
@@ -93,15 +93,15 @@ export default function GourmetSection() {
 
           {/* Direita: Conteúdo */}
           <div className="gourmet-content flex flex-col justify-center lg:py-10">
-             <p className="gourmet-stagger font-sans text-xs font-semibold uppercase tracking-[0.24em] text-bravino-red/80">
+             <p className="gourmet-stagger font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-bravino-red/80">
                Delicatessen
              </p>
              
-             <h2 className="gourmet-stagger mt-6 font-serif text-[3.5rem] font-bold leading-[1.05] text-bravino-red md:text-[4.5rem] drop-shadow-sm">
+             <h2 className="gourmet-stagger mt-4 font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight tracking-tight text-bravino-red drop-shadow-sm">
                 Seleção Gourmet<br /><span className="text-bravino-black font-medium opacity-90">e Bebidas.</span>
              </h2>
              
-             <p className="gourmet-stagger mt-8 max-w-lg font-sans text-[1.1rem] leading-[1.8] text-bravino-black/80">
+             <p className="gourmet-stagger mt-6 max-w-lg font-sans text-base md:text-lg leading-relaxed text-bravino-black/80">
                Nossa curadoria vai muito além da taça. A unidade Ayrton Senna abriga um empório completo, 
                desenhado para elevar sua experiência degustativa a outro patamar.
              </p>
@@ -113,8 +113,8 @@ export default function GourmetSection() {
                        <item.icon className="h-6 w-6" strokeWidth={1.4} />
                     </span>
                     <div>
-                      <h3 className="font-serif text-[1.4rem] font-bold text-bravino-black">{item.title}</h3>
-                      <p className="mt-2 font-sans text-sm leading-relaxed text-bravino-black/75 max-w-[34ch]">
+                      <h3 className="font-serif text-xl md:text-2xl font-bold text-bravino-black">{item.title}</h3>
+                      <p className="mt-2 font-sans text-sm md:text-base leading-relaxed text-bravino-black/75 max-w-[34ch]">
                          {item.description}
                       </p>
                     </div>

@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-[100dvh] overflow-hidden bg-bravino-black text-bravino-cream">
       <header className="absolute inset-x-0 top-0 z-30 bg-transparent">
-        <div className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-6 py-6 lg:px-12">
+        <div className="mx-auto flex w-full max-w-[1400px] items-center justify-between px-4 py-6 md:px-6 lg:px-12">
           <Link href="#" className="inline-flex items-center" aria-label="Bravino Wine Concept">
             <Image
               src="/logo-bravino.png"
@@ -35,8 +35,8 @@ export default function Hero() {
       </header>
 
       <div className="grid min-h-[100dvh] grid-cols-1 lg:grid-cols-2">
-        <div className="flex bg-bravino-black px-4 pb-12 pt-24 md:px-6 md:pb-14 md:pt-28 lg:px-16 lg:pb-20 lg:pt-32 xl:px-24">
-          <div className="my-auto max-w-2xl">
+        <div className="flex w-full bg-bravino-black pb-12 pt-24 md:pb-14 md:pt-28 lg:pb-20 lg:pt-32">
+          <div className="my-auto w-full max-w-[700px] ml-auto px-4 md:px-6 lg:px-12">
             <h1 className="font-serif text-5xl leading-none tracking-tight text-bravino-cream md:text-6xl lg:text-[4.5rem]">
               <span className="block">Viva a Experiência</span>
               <span className="block text-bravino-red mt-2">BRAVINO:</span>

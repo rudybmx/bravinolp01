@@ -55,15 +55,15 @@ export default function ConviteFinalSection() {
         </span>
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-[1200px] px-4 py-20 md:px-6 md:py-32 lg:px-12 lg:py-40 text-center">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 py-20 md:px-6 md:py-24 lg:px-12 lg:py-32 text-center">
         <div className="convite-content mx-auto flex max-w-4xl flex-col items-center">
           <span className="mx-auto mb-14 block h-px w-full max-w-4xl bg-bravino-peach" aria-hidden="true" />
 
-          <h2 className="font-serif text-6xl font-bold leading-[1.05] text-bravino-black md:text-7xl lg:text-[5.5rem] drop-shadow-md">
+          <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight tracking-tight text-bravino-black drop-shadow-md">
             Londrina merece brindes <br /><em className="font-serif italic text-bravino-red font-light">inesquecíveis</em>.
           </h2>
 
-          <p className="mx-auto mt-12 max-w-3xl font-sans text-lg font-light leading-[1.9] text-bravino-black/90 md:text-2xl">
+          <p className="mx-auto mt-8 max-w-3xl font-sans text-base md:text-lg leading-relaxed text-bravino-black/90">
             Venha nos visitar e descubra por que a BRAVINO é a grande parceira dos apaixonados por vinho. Sinta o
             aroma, deguste a história e encontre o rótulo ideal para o seu momento.
           </p>

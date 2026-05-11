@@ -53,19 +53,19 @@ export default function VinhosSection() {
       {/* Decorative Blur */}
       <div className="pointer-events-none absolute -left-1/4 top-0 h-[600px] w-[600px] rounded-full bg-bravino-peach/20 blur-[120px]" aria-hidden="true" />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-4 py-16 md:px-6 md:py-28 lg:px-12 lg:py-36">
+      <div className="relative z-10 mx-auto w-full max-w-[1400px] px-4 py-20 md:px-6 md:py-24 lg:px-12 lg:py-32">
         <div className="vinhos-wrapper grid grid-cols-1 gap-16 lg:grid-cols-12 lg:gap-20 xl:gap-24 items-center">
           
           {/* Left Column: Text & CTA */}
           <div className="vinhos-text flex flex-col items-start lg:col-span-5">
             <div className="border-l-[3px] border-bravino-red pl-8">
-              <p className="font-sans text-xs font-semibold uppercase tracking-[0.24em] text-bravino-black/60">
+              <p className="font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-bravino-black/60">
                 Bravino Wine Selection
               </p>
-              <h2 className="mt-5 font-serif text-[3.5rem] font-bold leading-[1.05] text-bravino-black md:text-6xl drop-shadow-sm">
+              <h2 className="mt-4 font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight tracking-tight text-bravino-black drop-shadow-sm">
                 Variedade <br /> de <span className="text-bravino-red">Vinhos</span>
               </h2>
-              <p className="mt-8 max-w-lg font-sans text-[1.1rem] leading-[1.9] text-bravino-black/85">
+              <p className="mt-6 max-w-lg font-sans text-base md:text-lg leading-relaxed text-bravino-black/85">
                 Nossa carta conta com mais de 200 rótulos selecionados das principais regiões do mundo, como Argentina,
                 Chile, Portugal, Itália, França e Brasil. Do frescor vibrante dos Brancos e Rosés à imponência dos Tintos
                 encorpados e a elegância dos Espumantes e Champagnes.
@@ -94,10 +94,10 @@ export default function VinhosSection() {
                 <p className="relative z-10 font-sans text-5xl font-extralight leading-none text-bravino-red/20 transition-colors duration-300 group-hover:text-bravino-red/40">
                   0{idx + 1}
                 </p>
-                <h3 className="relative z-10 mt-6 font-serif text-3xl font-bold tracking-tight text-bravino-black transition-colors duration-300 group-hover:text-bravino-red">
+                <h3 className="relative z-10 mt-6 font-serif text-2xl md:text-3xl font-bold tracking-tight text-bravino-black transition-colors duration-300 group-hover:text-bravino-red">
                   {wine.name}
                 </h3>
-                <p className="relative z-10 mt-4 font-sans text-[1.05rem] text-bravino-black/80">{wine.note}</p>
+                <p className="relative z-10 mt-4 font-sans text-sm md:text-base text-bravino-black/80">{wine.note}</p>
 
                 <div className="relative z-10 mt-12 h-[2px] w-12 bg-bravino-peach/80 transition-all duration-500 group-hover:w-full group-hover:bg-bravino-red" />
               </article>

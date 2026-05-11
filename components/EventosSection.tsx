@@ -80,8 +80,9 @@ export default function EventosSection() {
   }, []);
 
   return (
-    <section ref={containerRef} className="bg-bravino-black text-bravino-cream relative">
-      <div className="event-pin-wrap relative h-screen w-full overflow-hidden">
+    <section ref={containerRef} className="bg-bravino-black text-bravino-cream relative py-20 md:py-24 lg:py-32">
+      <div className="mx-auto w-full max-w-[1400px] px-4 md:px-6 lg:px-12">
+        <div className="event-pin-wrap relative h-[85vh] w-full overflow-hidden rounded-[2.5rem]">
         
         {/* Camada das Imagens de Fundo (Absolute and Covering Right Side or Full Screen) */}
         <div className="absolute inset-0 w-full h-full lg:left-1/2 lg:w-1/2">
@@ -102,10 +103,10 @@ export default function EventosSection() {
 
         {/* Informações Pinned da Esquerda */}
         <div className="pointer-events-none relative z-20 flex h-full w-full items-center">
-          <div className="mx-auto w-full max-w-[1600px] px-6 lg:px-12">
+          <div className="mx-auto w-full px-8 lg:px-16">
              <div className="flex flex-col lg:w-5/12">
                 <div className="mb-14">
-                  <h2 className="font-serif text-5xl font-bold text-bravino-cream drop-shadow-md md:text-6xl">
+                  <h2 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight tracking-tight text-bravino-cream drop-shadow-md">
                     Eventos e <span className="text-bravino-peach font-light italic">Experiências</span>
                   </h2>
                   <span className="mt-8 block h-[1px] w-24 bg-bravino-peach/60" aria-hidden="true" />
@@ -115,13 +116,13 @@ export default function EventosSection() {
                 <div className="relative h-[250px] w-full">
                   {eventsData.map((evt, i) => (
                     <article key={`txt-${evt.id}`} className={`panel panel-${i} absolute inset-0 flex flex-col justify-center`}>
-                       <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-bravino-peach/90">
+                       <p className="font-sans text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-bravino-peach/90">
                          {evt.kicker}
                        </p>
-                       <h3 className="mt-4 font-serif text-4xl font-bold tracking-tight text-white md:text-5xl">
+                       <h3 className="mt-4 font-serif text-3xl md:text-4xl font-bold tracking-tight text-white">
                          {evt.title}
                        </h3>
-                       <p className="mt-6 max-w-[40ch] font-sans text-lg font-light leading-relaxed text-white/80 md:text-xl">
+                       <p className="mt-6 max-w-[40ch] font-sans text-base md:text-lg leading-relaxed text-white/80">
                          {evt.description}
                        </p>
                     </article>
@@ -142,6 +143,7 @@ export default function EventosSection() {
           </div>
         </div>
 
+      </div>
       </div>
     </section>
   );
