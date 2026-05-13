@@ -12,21 +12,21 @@ const eventsData = [
     kicker: 'Aos Sábados',
     title: 'Vinho no Deck',
     description: 'Um convite semanal para degustar, descobrir e viver a energia única da BRAVINO. Aos sábados, a casa recebe degustações gratuitas e uma seleção especial em um ambiente descontraído.',
-    image: '/bravino-deck.png'
+    image: 'https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/bravino/wine_bar_bravino_site_eventos.jpg'
   },
   {
     id: 'winebar',
     kicker: 'Unidade Santana',
     title: 'O Wine Bar',
     description: 'O ponto de encontro perfeito, com vinhos servidos na temperatura ideal, taças especiais e comidinhas selecionadas. Experimente o frescor de novos rótulos descontraidamente.',
-    image: '/bravino-winebar.png'
+    image: 'https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/bravino/vinho_no_deck_bravino_eventos.JPG'
   },
   {
     id: 'degustacao',
     kicker: 'Exclusivo',
     title: 'Degustações Especiais',
     description: 'Eventos exclusivos com presença de enólogos e produtores, além de provas de grandes rótulos. Mergulhe nas histórias e características mais profundas do universo dos vinhos.',
-    image: '/bravino-degustacao.png'
+    image: 'https://pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev/landing_pages/bravino/degusta%C3%A7%C3%A3o_bravino_eventos.jpeg'
   }
 ];
 

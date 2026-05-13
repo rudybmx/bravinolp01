@@ -17,6 +17,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**', // This allows any path under the hostname
       },
+      {
+        protocol: 'https',
+        hostname: 'pub-db8ed4fb33634589a6ce5fb07e85cb46.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
   output: 'standalone',
